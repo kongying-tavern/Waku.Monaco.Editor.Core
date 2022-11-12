@@ -1,0 +1,29 @@
+{
+  "name": "waku-monaco-editor-core",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p ./tsconfig.base.json && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unicorn": "^44.0.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.34.1"
+  }
+}

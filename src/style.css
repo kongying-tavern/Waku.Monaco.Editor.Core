@@ -1,0 +1,125 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden
+}
+
+#app {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#editor-wrapper {
+  /* flex: auto; */
+  height: calc(100vh - 23px);
+}
+
+#statusbar-wrapper {
+  /* flex: none; */
+  background: #007acc;
+  height: 23px;
+}
+
+#statusbar-right {
+  float: right;
+}
+
+#statusbar-left {
+  float: left;
+}
+
+#status-bar-right::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#status-bar-left::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.statusbar-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  color: #ffffff;
+  font-size: 0.5em;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+.statusbar-item-tooltip {
+  display: none;
+  position: absolute;
+  top: -120%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #dbdbdb;
+  background: #f3f3f3;
+  color: #757575;
+  padding-inline: 1em;
+}
+
+.statusbar-item:hover .statusbar-item-tooltip {
+  display: block;
+}
+
+.statusbar-item-text {
+  padding-inline: 1em;
+}
+
+.statusbar-item-text:hover {
+  background-color: #1f8ad2;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
